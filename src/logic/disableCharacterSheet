@@ -1,4 +1,6 @@
-import { CHARACTER_SHEET_SETTING, MODULE_NAME } from "../settings";
+import {MODULE_NAME} from ''../config/ModuleConstants'
+import {CHARACTER_SHEET_SETTING} from '../config/TouchSettings'
+import {CHARACTER_SHEET_OFF, CHARACTER_SHEET_SETTING} from '../config/TouchSettings'
 
 export default () => {
   if (game.settings.get(MODULE_NAME, CHARACTER_SHEET_SETTING)) {
