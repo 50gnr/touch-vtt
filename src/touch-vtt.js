@@ -13,6 +13,7 @@ import {callbackForSnapToGrid, installSnapToGrid} from './tools/SnapToGridTool.j
 import {installTokenEraser} from './tools/TokenEraserTool.js'
 import {callbackForEasyTarget} from './logic/EasyTarget'
 import {initDirectionalArrows} from './logic/DirectionalArrows'
+import {initdisableCharacterSheet} from './logic/disableCharacterSheet'
 import {initEnlargeButtonTool} from './tools/EnlargeButtonsTool'
 import {installDrawingToolsControls} from './tools/DrawingTools'
 import {initMeasurementHud} from './tools/MeasurementHud'
