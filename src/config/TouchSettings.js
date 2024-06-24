@@ -10,6 +10,11 @@ export const DIRECTIONAL_ARROWS_SETTING = "directionalArrows"
 export const DIRECTIONAL_ARROWS_OFF = "off"
 export const DIRECTIONAL_ARROWS_ON = "on"
 
+export const CHARACTER_SHEET_SETTING = "directionalArrows"
+export const CHARACTER_SHEET_OFF = "off"
+export const CHARACTER_SHEET_ON = "on"
+
+
 export const LARGE_BUTTONS_SETTING = "largeButtons"
 
 export const EASY_TARGET_SETTING = "easyTarget"
@@ -50,6 +55,19 @@ export function registerTouchSettings() {
     default: DIRECTIONAL_ARROWS_ON,
   })
 
+  game.settings.register(MODULE_NAME, CHARACTER_SHEET_SETTING, {
+    name: "Disable Character Sheet on double click",
+    hint: "Enables / disables double left click sheet opening",
+    scope: "client",
+    config: true,
+    type: String,
+    choices: {
+      [CHARACTER_SHEET_ON]: "On",
+      [CHARACTER_SHEET_OFF]: "Off",
+    },
+    default: CHARACTER_SHEET_ON,
+  })
+  
   game.settings.register(MODULE_NAME, EASY_TARGET_SETTING, {
     name: "Targeting behavior",
     hint: "Controls if and how unowned tokens can be targeted via the touch interface",
